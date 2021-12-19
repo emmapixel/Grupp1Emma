@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+}
+
+#site-container {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+   background-image: url(./media/pennan.jpg);
+    background-repeat: space;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#create-card-form {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#create-card-textarea-input {
+    width: 50%;
+}
+
+#todays-date-input {
+    width: 20%;
+}
+
+.form-style {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+label {
+    margin: 5px 0px 5px 0px;
+}
+
+#submit-btn {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-style {
+    background-color: #4CAF50; 
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    font-family: cursive, arial;
+}
+
+h4 {
+    color: rgb(233, 29, 124);
+    padding: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 2px;
+    color: black; 
+    font-weight: 500;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#yada {
+    min-width: 20%;
+}
+
+#get-cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mantra-table-row td {
+    padding: 12px 12px 12px 12px;
+    text-align: left;
+    background-color: #7cbb7e;
+    color: white;
+}
+

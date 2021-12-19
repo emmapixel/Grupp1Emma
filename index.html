@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pepp</title>
+</head>
+<body>
+    <!--Here is the start of the site container-->
+    <div id="site-container">
+        <h2>Välkommen till skapa ditt eget mantra sidan</h2>
+        <h4>Steg 1. Fyll i stegen och tryck på skapa kort</h4>
+    
+        <div id="button-container"></div>
+        
+        <div id="create-card-container">
+            <form id="create-card-form" class="form-style">
+                <label for="todaysDate">Dagens Datum</label>
+                <input type="date" id="todays-date-input"></input>
+
+                <!--textarea that is connected to the create card fom-->
+                <label for="create-card-textarea-input">Skriv ditt mantra här</label>
+                <textarea id="create-card-textarea-input" rows="5" name="mantraText" form="create-card-form" placeholder="Skriv ditt mantra här!"></textarea>
+
+                <label for="color-input">Välj vilken färg kortet ska ha</label>
+                <input type="color" id="color-input"></input>
+
+                <label for="submit-btn">Tryck på skapa kort!</label>
+                <input type="submit" value="Skapa Kort" class="submit-btn-style" id="submit-btn">
+            </form>    
+        </div>
+
+        <h4>Steg 2. Klicka på Mantra Lista för att se dina mantran!</h4>
+        <h4>Steg 3. Klicka på mail ikonen för att skicka iväg mantrat!</h4>
+
+        <div id="get-cards-container">
+            <button id="get-card" class="btn-style" onclick="getCards()">Mantra Lista</button>
+
+            <table id="cardTable">
+                <tr>
+                    <th>Datum</th>
+                    <th>Text</th>
+                    <th>Färg</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!--Here is the scripts that we need-->
+    <script src="./frontend_scripts/CRUD_card.js"></script>
+    <script src="./email_service/email_service.js"></script>
+</body>
+</html>
